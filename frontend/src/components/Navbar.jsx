@@ -32,7 +32,7 @@ const Navbar = () => {
       setLoading(true);
 
       try {
-        const response = await axios.post("http://localhost:1001/api/chat/chats", { message });
+        const response = await axios.post("https://diettracker-2lcg.onrender.com/api/chat/chats", { message });
         const chatbotResponse = response.data.reply;
         setChatMessages((prevMessages) => [...prevMessages, { bot: chatbotResponse }]);
       } catch (error) {

@@ -9,7 +9,7 @@ const Profile = () => {
   // Function to fetch profile data
   const getProfile = async () => {
     try {
-      const response = await axios.get('http://localhost:1001/api/profile/getProfile', {
+      const response = await axios.get('https://diettracker-2lcg.onrender.com/api/profile/getProfile', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },

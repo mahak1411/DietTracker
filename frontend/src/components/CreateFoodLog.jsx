@@ -21,7 +21,7 @@ const CreateFoodLog = () => {
     try{
       const token = localStorage.getItem("token");
       const response = await axios.post(
-        "http://localhost:1001/api/food/createFood",
+        "https://diettracker-2lcg.onrender.com/api/food/createFood",
         food,
         {
           headers: {

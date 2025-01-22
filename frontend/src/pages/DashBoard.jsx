@@ -37,7 +37,7 @@ const Dashboard = () => {
 
     try {
       const response = await axios.get(
-        "http://localhost:1001/api/profile/getProfile",
+        "https://diettracker-2lcg.onrender.com/api/profile/getProfile",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -65,7 +65,7 @@ const Dashboard = () => {
 
     try {
       const response = await axios.get(
-        "http://localhost:1001/api/food/allFood",
+        "https://diettracker-2lcg.onrender.com/api/food/allFood",
         {
           headers: {
             Authorization: `Bearer ${token}`,

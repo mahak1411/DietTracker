@@ -11,7 +11,7 @@ const NutritionInfo = () => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.get(
-        "http://localhost:1001/api/food/allFood",
+        "https://diettracker-2lcg.onrender.com/api/food/allFood",
         {
           headers: {
             Authorization: `Bearer ${token}`,

@@ -11,7 +11,7 @@ const FoodLog = () => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.get(
-        "http://localhost:1001/api/food/allFood",
+        "https://diettracker-2lcg.onrender.com/api/food/allFood",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -33,7 +33,7 @@ const FoodLog = () => {
   const deleteFood = async (id) => {
     const token = localStorage.getItem("token");
     try {
-      await axios.delete(`http://localhost:1001/api/food/deleteFood/${id}`, {
+      await axios.delete(`https://diettracker-2lcg.onrender.com/api/food/deleteFood/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

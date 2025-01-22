@@ -33,7 +33,7 @@ const CreateProfile = () => {
   
     try {
       const response = await axios.post(
-        "http://localhost:1001/api/profile/createProfile",
+        "https://diettracker-2lcg.onrender.com/api/profile/createProfile",
         profile,
         {
           headers: {

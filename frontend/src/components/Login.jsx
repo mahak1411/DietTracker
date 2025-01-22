@@ -18,7 +18,7 @@ const Login = () => {
     e.preventDefault();
     const {email, password} = data;
     try{
-    const response = await axios.post("http://localhost:1001/api/auth/login", {email, password});
+    const response = await axios.post("https://diettracker-2lcg.onrender.com/api/auth/login", {email, password});
     const token = response.data.token; 
     localStorage.setItem('token', token);
     toast.success('User signed up successfully');
